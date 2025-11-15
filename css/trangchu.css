@@ -1,0 +1,47 @@
+.banner-sofa{
+    background-image: url(../images/img_trangchu/Banner_sofa_ONA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner-sofa h1{
+    color: white;
+    font-size: 70px;
+}
+.banner-2{
+    background-image: url(../images/img_trangchu/banner_trangchu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    margin-top: 30px;
+    padding: 100px;
+}
+.banner-2 .content{
+    width: 45%;
+    text-align: center;
+}
+.banner-3{
+    height: 700px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+.banner-3 img{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    object-fit: cover;
+}
+.banner-3 img:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+

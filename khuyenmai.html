@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bán Hàng Nội Thất</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" >
+   </head>
+   <body>
+      <header>
+         <section class="header">
+            <div class="top-header">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-3">
+                        <div class="logo">
+                           <img src="images/logo-02.jpg" />
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="search">
+                           <form class="form-inline justify-content-center row">
+                              <div class="form-search col-10">
+                                 <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search">
+                                 <button class="btn btn-search p-o" type="submit">
+                                 <i class="fa fa-search" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="contact">
+                           <h4>
+                              Hotline hỗ trợ
+                           </h4>
+                           <h5>
+                              0348363413 - 077777777
+                           </h5>
+                        </div>
+                     </div>
+                     <div class="col-md-2">
+                        <button class="btn-cart ">
+                        <i class="fa fa-cart-plus mr-2" aria-hidden="true"></i>
+                        <a href="dat_hang.html" class="text-white p-1 " > Giỏ Hàng</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+         </section>
+      </header>
+      <div class="background-menu"> </div>
+      <div class="menu-wrapper">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg ">
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                           <div class="dropdown">
+                              <a class="nav-link" data-bs-toggle="dropdown" >
+                                    nội thất <i class="fa fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu" >
+                                    <li><a class="dropdown-item " href="tugiuong.html">Combo Tủ Giường</a></li>
+                                    <li><a class="dropdown-item" href="banghe.html">Combo Bàn Ghế</a></li>
+                              </ul>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="tintuc.html">
+                           Tin Tức
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" href="khuyenmai.html">
+                           Khuyến mãi
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="gioithieu.html">
+                           Giới thiệu
+                           </a>
+                        </li>
+
+                     </ul>
+                     
+                  </div>
+                  <button type="button" class="btn btn-outline-warning d-none" id="logout"> Đăng xuất <i class="fa fas fas fa-sign-out-alt" > </i></button>
+                  <div class="gr-button login-signup">
+                     <button class="btn btn-login " id="dangnhap" data-bs-toggle="modal" data-bs-target="#sign-in">
+                      Đăng nhập <i class="fa fa-sign-in"> </i>
+                    </button>
+                    <div class="modal fade " id="sign-in" >
+                        <div class="modal-dialog">
+                           .<div class="modal-content bg-dark   ">
+                              <div class="modal-header">
+                                 <h2 class="modal-title text-center w-100 fw-bold text-warning " >
+                                    Đăng Nhập
+                                 </h2>
+                              </div>
+                              <form id="login">
+                                 <div class="modal-body p-5 ">
+                                    <div class="input-group mb-4 ">
+                                       <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                       <input type="text" class="form-control p-2 " id="nameLogin" placeholder="User name">
+                                    </div>
+                                    <div class="input-group mb-3 ">
+                                       <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                       <input type="password" class="form-control p-2" id="passwordLogin" placeholder="Password">
+                                    </div>
+                                    <p class="text-danger " id="error-signin"></p>
+                                    <div class="form-check mb-5 ">
+                                       <input class="form-check-input text-bg-dark " type="checkbox" value="" id="" />
+                                       <label class="form-check-label text-white " for=""> Remember password </label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-outline-warning w-100 " ><h5 class="fw-bold ">SIGN IN</h5></button>
+                                 </div>
+                              </form>
+
+                              <p class="text-white text-center ">bạn chưa có tài khoản  <span class="link-warning">đăng ký</span></p>
+                           </div>
+                        </div>
+                    </div>
+                    
+                     <button class="btn btn-login" id="dangky" data-bs-toggle="modal" data-bs-target="#sign-up" >
+                         Đăng ký <i class="fa fa-user" > </i>
+                     </button>
+                     <div class="modal fade" id="sign-up" >
+                        <div class="modal-dialog">
+                           .<div class="modal-content bg-dark   ">
+                              <div class="modal-header">
+                                 <h2 class="modal-title text-center w-100 fw-bold text-warning  ">
+                                    Đăng Ký
+                                 </h2>
+                              </div>
+                              <div class="modal-body p-5  ">
+                                 <form id="form-dangki">
+                                    <div class="input-group mb-4 ">
+                                       <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                       <input type="text" class="form-control p-2" id="name" placeholder="User name" >
+                                    </div>
+                                    <div class="input-group mb-4 ">
+                                       <div class="input-group-text  "><i class="fa fas fa-envelope text-warning"></i></div>
+                                       <input type="email" class="form-control p-2" id="email" placeholder="Eamil" >
+                                    </div>
+                                    <div class="input-group mb-4 ">
+                                       <div class="input-group-text  "><i class="fa fas fa-phone text-warning"></i></div>
+                                       <input type="text" class="form-control p-2" id="phone" placeholder="Phone" >
+                                    </div>
+                                    <div class="input-group mb-4 ">
+                                       <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                       <input type="password" class="form-control p-2" id="password" placeholder="Password" >
+                                    </div>
+
+                                    <div class="form-check mb-5 ">
+                                       <input class="form-check-input text-bg-dark " type="checkbox" value="" id="check-signup" />
+                                       <label class="form-check-label text-white " for="check-signup"> Đồng ý với <a class="link-warning " style="font-size: 18px;" href="http://">điều khoản & chính sách</a> của chúng tôi </label>
+                                       <p class="text-danger" id="error"></p>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-outline-warning  w-100 " id="btn-dangky"><h5 class="fw-bold ">SIGN UP</h5></button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+               </nav>
+            </div>
+      </div>
+
+      <!-- khuyen mai -->
+      <section class="product-sales">
+        <h3 class="title-page">
+           SẢN PHẨM KHUYẾN MÃI
+        </h3>
+        <div class="container">
+           <div class="list-box row">
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-010.png">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                          BÀN ĂN BANKAH56-KM
+                          </a>
+                       </h4>
+                       <p  class="mb-0">
+                          Giá: 23,380,000 đ
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>20%</span>
+                    </div>
+                    <a href="./dat_hang.html" class="add-to-cart">
+                    Đặt hàng
+                    </a>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-011.jpg">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                          Bàn Ăn Nhập Khẩu-KM
+                          </a>
+                       </h4>
+                       <p class="mb-0">                                                                                                                                                                                                                                   
+                          Giá: 21,000,000 đ                                                                                                                      
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>20%</span>
+                    </div>                                                                                                
+                    <a href="#" class="add-to-cart">
+                    Đặt hàng
+                    </a>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-012.png">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                         BÀN ĂN BANK909-KM
+                          </a>
+                       </h4>
+                       <p class="mb-0">
+                          Giá: 20,160,000 đ
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>30%</span>
+                    </div>
+                    <a href="#" class="add-to-cart">
+                    Đặt hàng
+                    </a>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-013.jpg">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                          Sofa Da Thật
+                          </a>
+                       </h4>
+                       <p class="mb-0">
+                          Giá: 28,300,000 đ
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>20%</span>
+                    </div>
+                    <a href="#" class="add-to-cart">
+                    Đặt hàng
+                    </a>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-014.jpg">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                          Sofa Da Thật Malaysia-KM
+                          </a>
+                       </h4>
+                       <p class="mb-0">
+                         Giá: 35,400,000 đ
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>20%</span>
+                    </div>
+                    <a href="#" class="add-to-cart">
+                    Đặt hàng
+                    </a>
+                 </div>
+              </div>
+              <div class="col-md-4">
+                 <div class="box-item">
+                    <div class="img-box">
+                       <img src="images/img-015.jpg">
+                    </div>
+                    <div class="content-box">
+                       <h4>
+                          <a href="">
+                          Sofa Da SFDNK1855-KM
+                          </a>
+                       </h4>
+                       <p class="mb-0">
+                          Giá: 23,400,000 đ
+                       </p>
+                    </div>
+                    <div class="sale-report">
+                       <span>20%</span>
+                     </div>
+                    <a href="#" class="add-to-cart">
+                      Đặt hàng
+                    </a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+     <!-- ketthuc -->
+     <footer>
+      <div class="container">
+         <div class="row contact">
+            <div class="col-md-3">
+               <h4>Hỗ Trợ Khách Hàng</h4>
+               <ul>
+                  <li>
+                     <a href="">Chính Sách Vận Chuyển</a>
+                  </li>
+                  <li><a href="">Chính Sách Thanhh Toán</a>
+                  <li>Chính Sách Đổi Trả Hoàn Tiền</li>
+                  <li>Chính Sách Bảo Hành</li>
+                  <li>Chính Sách Bảo Mật</li>
+                  <li>Chính Sách Xử Lý Khiếu Nại</li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>Về Chúng Tôi</h4>
+               <ul>
+                  <li>Giới Thiệu</li>
+                  <li>Dịch Vụ Của AQ</li>
+                  <li>Tuyển Dụng</li>
+                  <li>Sơ Đồ Chỉ Đường</li>
+                  <li>Báo Chí</li>
+                  <li>Chăm Sóc Khách Hàng</li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>Hỗ Trợ Bán Hàng</h4>
+               <ul>
+                  <li>Hỗ trợ bảo hành: 07777777 </li>
+                  <li>Tư vấn mua hàng: 07777777 </li>
+                  <li>Dich vụ bọc lại sofa: 07777777</li>
+                  <li>Chính Sách Bảo Hành</li>
+                  <li>Phản ánh thái độ phục vụ: 07777777</li>
+
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>Thành viên</h4>
+               <ul>
+                  <li>Văn Ngọc Danh - 22691791 </li>
+                  <li>Huỳnh Tấn Lộc - 22686171 </li>
+
+               </ul>
+            </div>
+         </div>
+         <div class="row address-store">
+            <div class="col-md-4">
+               <h4> 
+                  <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                  SIÊU THỊ NỘI THẤT 1
+               </h4>
+               <ul>
+                  <li>Địa chỉ: 205-207 ABC</li>
+                  <li>Hotline: 07777777</li>
+                  <li>Email: hntnghia.20it8@vku.udn.vn</li>
+               </ul>
+            </div>
+            <div class="col-md-4">
+               <h4> 
+                  <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                  SIÊU THỊ NỘI THẤT 2
+               </h4>
+               <ul>
+                  <li>Địa chỉ: Lô 21 XYZ</li>
+                  <li>Hotline: 07777777</li>
+                  <li>Email: hntnghia.20it8@vku.udn.vn</li>
+               </ul>
+            </div>
+            <div class="col-md-4">
+               <h4> 
+                  <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                  SIÊU THỊ NỘI THẤT 3
+               </h4>
+               <ul>
+                  <li>Địa chỉ: 469 TP Hồ Chí Minh</li>
+                  <li>Hotline: 07777777</li>
+                  <li>Email: hntnghia.20it8@vku.udn.vn</li>
+               </ul>
+            </div>
+
+         </div>
+      </div>
+   </footer>
+  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="Bootstrap/js/bootstrap.bundle.min.js" ></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js" type="text/javascript"></script>
+   <script src="js/validate.js"></script>
+</html>

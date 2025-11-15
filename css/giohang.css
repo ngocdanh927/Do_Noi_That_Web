@@ -1,0 +1,14 @@
+#content{
+    min-height: 700px;
+}
+table tbody tr td img{
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+    overflow: auto;
+    border: 2px solid ;
+}
+td{
+    width: 500px ;
+}

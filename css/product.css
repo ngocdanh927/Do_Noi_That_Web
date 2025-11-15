@@ -1,0 +1,47 @@
+
+.items-combo{
+    margin-right: 18px;
+    color: black;
+    transition: all 0.3 linear;
+
+}
+
+.items-combo:hover{
+    transform: scale(1.2);
+}
+.items-acti{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    transform: none !important;
+}
+.add-cart{
+    opacity: 0%;
+    transition: all 0.3s;
+}
+.card:hover .add-cart{
+    opacity: 100%;
+}
+.card{
+    height: 400px !important;
+}
+.card img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+    transition: all 0.3s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.product{
+    display: block;
+}
+.product-codien,.product-hiendai,.product-sangtrong{
+    display: none;
+}
+.card-body{
+   position: relative;
+   z-index: 100; 
+}
